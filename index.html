@@ -9,21 +9,32 @@
 </head>
 <body>
     <header>
-        <h1></h1>
+        <h1>Verificador de idade</h1>
     </header> 
 
     <section>
-        <div>
-
+        <div id="primeira">
+            <p>
+                Ano de Nascimento
+                <input type="number" name="itxtano" id="txtano" min="0" max="100" >
+            </p>
+            <p>
+                Sexo: <!--Quando o ''name'' dos input sao iguais, ele deixa desmarcar, porem se forem diferentes, vc n consegue desmarcar a caixinha'-->
+                <input type="radio" name="radsex" id="masc" checked>
+                <label for="masc">masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="femi">feminino</label>
+                <p><input type="button" value="Verificar" onclick="verificar()"></p>
+            </p>
         </div>
-        <div>
-
+        <div id="res" style=" text-align: center;" >
+            Preencha os dados acima para ver o resultado!
         </div>
-        <footer>
-            <p>&copy; Guilherme</p>
-        </footer>
+
         <script src="script.js"></script>
     </section>
-
+    <footer>
+        <p>&copy; Guilherme</p>
+    </footer>
 </body>
 </html>
